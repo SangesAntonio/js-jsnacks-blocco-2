@@ -13,7 +13,12 @@ while(r < numb){
 }
 console.log(numbers)
 
+let sum;
 
+while(){
+
+
+}
 
 
 
