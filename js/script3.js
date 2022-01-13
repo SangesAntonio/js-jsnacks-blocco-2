@@ -4,25 +4,26 @@ Javascript - JS
 JSnack 3*/
 console.log('ok js')
 
+const invitati=[]
 const name1=['antonio', 'andrea', 'nico', 'danilo', 'matteo', 'adriano', 'angelo', 'garibaldi'];
 
-const surname=['bellini','Andreotti','Berlusconi', 'Giacometti','cortese','sanges','Albertozzi'];
-
-const invitati=[]
-
+const surname1=['bellini','Andreotti','Berlusconi', 'Giacometti','cortese','sanges','Albertozzi'];
 
 
 while( invitati.length < 3){
 
-    const rndName=Math.floor(Math.random() * surname.lenght);
-    const rndSurname=Math.Floor(Math.random() * surname.length);
+    const rndName=Math.floor(Math.random( ) * name1.length);
+    const rndSurname=Math.floor(Math.random( ) * surname1.length);
     
     const nameInvites=name1[rndName];
-    const surnameInvites=surname[rndSurname];
+    const surnameInvites=surname1[rndSurname];
+    const fintoInvitato =`${nameInvites} ${surnameInvites}`;
 
-    const fintoInvitato=`${nameInvites} ${surnameInvites}`
-    invitati.push(fintoInvitato);
+    if(!invitati.includes(fintoInvitato)){
+        invitati.push(fintoInvitato);
+
+    }
 }
 
-console.log(invitati)
+console.log(invitati);
 
